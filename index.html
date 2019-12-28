@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:title" content="Lines"/>
+      <meta property="og:image" content="images/app_icon_small.jpg"/>
+      <meta property="og:description" content="ScrollingScreenshot"/>
+      <style>
+@font-face {
+    font-family: "HansKendrick Regular";
+    src: url("fonts/HansKendrick-Regular.otf") format("opentype")
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #2380fd, #4cdbf3, #59aa27, #aeff82, #ff9f21, #FEDF39, #ff4b1c, #ff56a8);
+    background-size: 1600% 1600%;
+}
+
+p {
+    color: white;
+    font-family: "HansKendrick Regular"
+}
+
+#content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
+
+#iconAndText,
+div {
+    position: relative
+}
+
+#appIcon {
+    width: 36%;
+    height: auto
+}
+
+#title {
+    position: absolute;
+    letter-spacing: 1.0vw;
+    top: 15%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    z-index: 1;
+    font-size: 2vw
+}
+
+#subtitle {
+    position: absolute;
+    top: 56%;
+    letter-spacing: 1.75pt;
+    font-size: 2vw;
+    font-weight: bold;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1
+}
+
+#body {
+    position: relative;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-weight: 300;
+    width: 55%;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 13pt;
+    z-index: 1
+}
+
+#appstoreIcon {
+    width: 100pt;
+    height: auto;
+    margin-top: 2.5%
+}
+
+#footer {
+    top: 1.25vw;
+    font-size: 9pt;
+    max-width: 80%;
+    margin: auto;
+    opacity: 0.95
+}
+
+.footerLink {
+    text-decoration: underline;
+    color: white;
+    opacity: 1
+}
+
+#legal {
+    font-size: 8pt;
+    opacity: 0.85
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    #body {
+        font-size: 8pt;
+        width: 70%;
+        font-weight: 400
+    }
+    #appIcon {
+        width: 43%;
+        height: auto
+    }
+    #title {
+        position: absolute;
+        letter-spacing: 1.5vw;
+        font-size: 12vw
+    }
+    #subtitle {
+        font-size: 2.1vw
+    }
+    #comingSoon {
+        font-weight: bold
+    }
+    #appstoreIcon {
+        width: 70pt
+    }
+    #footer {
+        font-size: 1.75vw
+    }
+    #legal {
+        font-size: 1.5vw
+    }
+}
+
+</style>
+         </head>
+   <body>
+      <div id="content">
+      <div id="iconAndText">
+         <p id="title">ScrollingScreenshot</p>
+         <img id="appIcon" src="images/icon.png"></img>
+         <p id="subtitle"></p>
+      </div>
+      <p id="body">ScrollingScreenshot is an app that helps you take scrolling screenshot.
+      <p><a href="https://itunes.apple.com"> <img id="appstoreIcon" src="images/app_store.png"></img> </a>
+      <div id="footer">
+         <p>Lines is an independent app made by ShiPin Zhou. <br> If you'd like to reach out with questions, complaints, or compliments <a class="footerLink" href="mailto:linesapp@hotmail.com">send me an email.</a></p>
+      </div>
+      
+</html>
